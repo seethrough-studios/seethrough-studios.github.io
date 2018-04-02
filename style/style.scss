@@ -1,0 +1,89 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+// @font-face {
+//   font-family: 'Quicksand';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Quicksand Regular'), local('Quicksand-Regular'), url('/style/font.woff2') format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+// }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+img.org-logo {
+  width: 20px;
+}
+
+img.nav-logo {
+  height: 30px;
+  filter: invert(1);
+}
+
+.bg-alphablack {
+  background-color: rgba(0,0,0,0.8);
+}
+
+div.card-img-top {
+  height: 10em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#carouselFeatured {
+  height: 300px;
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.video-wrapper {
+  width: 100%;
+
+  .figure-img {
+    position: relative;
+
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.post {
+  img {
+    max-width: 100%;
+  }
+  iframe {
+    max-width: 100%;
+  }
+
+  code {
+    white-space: initial;
+  }
+
+  blockquote {
+    margin-left: 1em !important;
+  }
+}

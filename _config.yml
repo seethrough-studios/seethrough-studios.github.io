@@ -1,0 +1,19 @@
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+title: SeeThrough Studios
+url: https://seethroughstudios.com
+author: paul
+twitter:
+  username: pdyxs
+logo: /content/logos/seethroughstudios.png
+social:
+  name: Paul Sztajer
+  links:
+    - https://twitter.com/pdyxs
+    - https://facebook.com/pdyxs
+    - http://instagram.com/pdyxs
+    - http://medium.com/@pdyxs
+    - http://linkedin.com/in/pdyxs
+    - https://github.com/pdyxs
+google-site-verification: google62ea18a3dcb04445.html

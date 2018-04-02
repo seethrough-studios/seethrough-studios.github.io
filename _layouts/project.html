@@ -1,0 +1,37 @@
+---
+extensions:
+ - .jpg
+ - .png
+---
+{% include header.html %}
+{% include nav.html %}
+
+<div class="container-fluid mt-2">
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>{{page.title}}</h2>
+    <p class="lead">{{page.description}}</p>
+
+    {% include definitions.html list=page.definitions %}
+
+    <p class="text-center">
+    {% for action in page.actions %}
+      <a role="button" href="{{action.url}}" target="_blank" class="btn btn-dark">
+        {{action.text}}
+      </a>
+    {% endfor %}
+    </p>
+
+    {{content}}
+
+    {% include quotes.html quotes=page.quotes %}
+  </div>
+  <div class="col-md-6">
+  {% include gallery.html %}
+  </div>
+</div>
+
+</div>
+
+{% include footer.html %}

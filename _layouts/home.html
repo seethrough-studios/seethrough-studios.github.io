@@ -1,0 +1,55 @@
+{% include header.html %}
+{% include nav.html %}
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="jumbotron col-xs-12 bg-alphablack text-light">
+      {% for link in site.data.nav.links %}
+       {% include title.html title=link.text link=link.url %}
+      {% endfor %}
+      </div>
+
+      {% assign projects = site.pages | sort: 'priority' | reverse %}
+      <div id="carouselFeatured" class="col-xs-12 slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          {% assign hasFirst = false %}
+          {% for page in projects %}
+            {% if page.feature %}
+              <li data-target="#carouselFeatured" data-slide-to="0"
+                {% if hasFirst == false %}
+                  {% assign hasFirst = true %}
+                  class="active"
+                {% endif %}></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+        <div class="carousel-inner">
+          {% assign hasFirst = false %}
+          {% for page in projects %}
+            {% if page.feature %}
+              <div class="carousel-item
+                {% if hasFirst == false %}active
+                  {% assign hasFirst = true %}
+                {% endif %}"
+                style="background-image: url('{{page.url}}{{page.feature}}.jpg')">
+                <div class="rounded bg-alphablack carousel-caption d-none d-md-block">
+                  <h3><a class="text-light" href="{{page.url}}">{{page.title}}</a></h3>
+                  <p>{{page.description}}</p>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-7">
+      {{content}}
+    </div>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
