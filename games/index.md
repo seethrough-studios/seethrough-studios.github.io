@@ -1,7 +1,7 @@
 ---
 layout: list
-title: What
+title: Games
 ---
-I make works that about science, complexity and interactivity (and often all three).
+SeeThrough Studios specialises in games that have an educational bent.
 
-I'm currently looking for more ways to collaborate with scientists, artists and science communicators. If that's you, please [get in touch](/where)!
+Please find our past works (contract and otherwise) below.

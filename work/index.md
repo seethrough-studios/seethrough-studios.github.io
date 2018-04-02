@@ -1,0 +1,4 @@
+---
+layout: basic
+title: Work
+---

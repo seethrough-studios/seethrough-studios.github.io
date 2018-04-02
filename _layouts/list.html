@@ -2,11 +2,10 @@
 {% include nav.html %}
 
 <div class="container-fluid mt-2">
-  {% include title.html %}
+  {% include title.html title=page.title %}
 
   <div class="lead">{{content}}</div>
 
-  <h3>Projects</h3>
   {% include list.html %}
 
 </div>
